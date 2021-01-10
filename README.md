@@ -44,12 +44,19 @@ A full list of command line arguments for either program can be viewed using the
 ### Analyzing the Parameter Estimation 
 We can now analyze the results of the parameter estimation. For the CPU results, the individual estimates must first be aggregated. This can be accomplished using the provided script aggregate_cpu_estimates.py. Then we can look at the estimates for the means and compute the l2 norm of the error. The figure below shows the convergence for the means of a 15-dimensional Gaussian.
 
-<img align="center" src="/images/evolution_15.png" width="50%" alt="Convergence" />
-![Convergence][/images/evolution_15.png]
+<p align="center">
+    <img src="/images/evolution_15.png" width="50%" alt="Convergence">
+</p>
 
 ### Scaling
 The runtime scales well with number of steps, dimensions, and datapoints.
 
-<img align="center" src="/images/scaling_20.png" width="50%" alt="Step Scaling" />
-<img align="center" src="/images/scaling_data.png" width="50%" alt="Data Scaling" />
-<img align="center" src="/images/scaling_dim.png" width="50%" alt="Dimension Scaling" />
+<p align="center">
+    <img src="/images/scaling_20.png" width="50%" alt="Step Scaling" >
+</p>
+<p align="center">
+    <img src="/images/scaling_data.png" width="50%" alt="Data Scaling" >
+</p>
+<p align="center">
+    <img src="/images/scaling_dim.png" width="50%" alt="Dimension Scaling" >
+</p>
